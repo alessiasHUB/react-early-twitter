@@ -3,10 +3,11 @@ interface NavItemProps {
 }
 
 function NavItem(props: NavItemProps): JSX.Element {
+  const arrow = "->"
   return (
     <>
-      <a href="#">{props.label}</a>
-      <span> | </span>
+      <span> {arrow} </span>
+      <a href="#">~{props.label.toUpperCase()}</a>
     </>
   );
 }
